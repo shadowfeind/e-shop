@@ -1,0 +1,31 @@
+{
+  "type": "module",
+  "name": "e-shop",
+  "version": "1.0.0",
+  "description": "ecommerce app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server \" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowfeind/e-shop.git"
+  },
+  "author": "kiran rai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shadowfeind/e-shop/issues"
+  },
+  "homepage": "https://github.com/shadowfeind/e-shop#readme",
+  "dependencies": {
+    "concurrently": "^6.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.12.5",
+    "nodemon": "^2.0.7"
+  }
+}
